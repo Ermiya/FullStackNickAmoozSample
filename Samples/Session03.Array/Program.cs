@@ -16,7 +16,18 @@ namespace Session03.Array
             int[] MyArray02 = new int[4] { 3, 4, 5, 6 };
             int[] MyArray03 = new int[] { 3, 4, 5, 6 };
 
-            int i;
+           
+            Console.WriteLine(MyArray03[1]);
+
+            foreach (var item in MyArray03)
+            {
+                Console.WriteLine(item);
+            }
+
+            for (int i = 0; i < MyArray03.Length; i++)
+            {
+                Console.WriteLine(MyArray03[i]);
+            }
         }
     }
 }
