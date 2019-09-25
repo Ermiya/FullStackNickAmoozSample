@@ -4,8 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Session03.Array
+namespace Session03.Array1
 {
+    public class Person
+    {
+        public string Name { get; set; }
+        public string Family { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -28,6 +33,15 @@ namespace Session03.Array
             {
                 Console.WriteLine(MyArray03[i]);
             }
+            Person[] persons = new Person[4];
+            var r = persons[0].Name;
+
+            //var array = Array.CreateInstance();
+
+            //persons.CopyTo()
+            persons.Clone();
+            //Array.Sort()
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace NickAmoozNews.Entities
 {
     public class NewsFile : BaseEntity<int>
     {
-        public enum FileType
+        public enum FileTypes
         {
             Picture,
             Video,
@@ -16,7 +16,7 @@ namespace NickAmoozNews.Entities
             Document
         }
         public string Path { get; set; }
-        public FileType FileType { get; set; }
+        public FileTypes FileType { get; set; }
 
     }
 }
